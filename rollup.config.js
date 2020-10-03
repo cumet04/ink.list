@@ -35,7 +35,7 @@ function serve() {
 export default {
   input: "src/main.ts",
   output: {
-    sourcemap: true,
+    sourcemap: !production,
     format: "iife",
     name: "app",
     file: "public/build/bundle.js",
@@ -44,7 +44,7 @@ export default {
     svelte({
       dev: !production,
       css: (css) => {
-        css.write("bundle.css");
+        css.write("bundle.css", !production);
       },
       preprocess: sveltePreprocess(),
     }),
