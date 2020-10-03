@@ -46,7 +46,11 @@ export default {
       css: (css) => {
         css.write("bundle.css", !production);
       },
-      preprocess: sveltePreprocess(),
+      preprocess: sveltePreprocess({
+        postcss: {
+          plugins: [require("postcss-nesting")(), require("postcss-import")()],
+        },
+      }),
     }),
     resolve({
       browser: true,

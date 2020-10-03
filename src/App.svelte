@@ -3,6 +3,7 @@
 </script>
 
 <style>
+  @import "./assets/css/base.css";
   main {
     text-align: center;
     padding: 1em;
