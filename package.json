@@ -1,6 +1,6 @@
 {
-  "name": "svelte-app",
-  "version": "1.0.0",
+  "name": "ink.list",
+  "version": "0.0.0",
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
@@ -19,8 +19,7 @@
     "svelte-preprocess": "^4.0.0",
     "@rollup/plugin-typescript": "^6.0.0",
     "typescript": "^3.9.3",
-    "tslib": "^2.0.0",
-    "@tsconfig/svelte": "^1.0.0"
+    "tslib": "^2.0.0"
   },
   "dependencies": {
     "sirv-cli": "^1.0.0"
